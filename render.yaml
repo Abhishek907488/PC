@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: my-python-app
+    runtime: python
+    buildCommand: "unzip -o *.zip && cd * && pip install -r requirements.txt"
+    startCommand: "python main.py"
